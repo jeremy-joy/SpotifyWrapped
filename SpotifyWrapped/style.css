@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 90.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #edebeb;
+  background-image: linear-gradient(to top left, #115305dd 0%, #30342f 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background-color: rgba(1, 16, 6, 0.572);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+.SpotifyLogo {
+  width: 50px; /* Adjust the width to make it smaller */
+  height: auto; /* Maintain the aspect ratio */
+  margin-bottom: 20px; /* Add some space below the logo */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*Login Details input box*/
+.inputBox {
+  margin: 15px 0;
+  position: relative;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.inputBox input::placeholder {
+  color: #aaa;
+  font-size: 12px;
+}
+/* Styling for the login button container */
+.loginBtn {
+  text-align: center; /* Centers the button horizontally */
+  margin-top: 20px; /* Adds space above the button */
+}
+
+/* General styling for buttons with the class "btn" */
+.btn {
+  font-size: 16px; /* Sets the font size */
+  padding: 10px 20px; /* Adds padding inside the button */
+  border-radius: 25px; /* Rounds the edges of the button */
+  border: none; /* Removes the default border */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Specific styling for the "green-btn" class */
+.green-btn {
+  background-color: #4caf50; /* Green background color */
+  color: white; /* White text color */
+}
+
+/* Hover effect for the green button */
+.green-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarges the button on hover */
+}
+
+/* Styling the Sign in with Google box*/
+.g-sign-in-btn {
+  display: block;
+  margin: 20px auto; /* Center the button horizontally */
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.g-sign-in-btn:hover {
+  background-color: #c7c1c1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Wrapper for the content inside Google Sign-In button */
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Google logo inside the button */
+.logo-wrapper img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* Text inside the Google Sign-In button */
+.text-container {
+  font-size: 14px;
+  color: #333;
+  font-weight: 500;
+}
